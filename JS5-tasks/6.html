@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Submit Prevention</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="textInput">Enter something:</label>
+      <input type="text" id="textInput" name="textInput" required />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      // Select the form element
+      const form = document.getElementById("myForm");
+
+      // Add submit event listener to the form
+      form.addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Log a message to the console
+        console.log("Form not submitted");
+      });
+    </script>
+  </body>
+</html>

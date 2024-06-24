@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Context Menu</title>
+    <style>
+      #targetDiv {
+        width: 300px;
+        height: 200px;
+        border: 1px solid #000;
+        margin: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f0f0f0;
+      }
+      #contextMenu {
+        position: absolute;
+        display: none;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+      }
+      #contextMenu ul {
+        list-style: none;
+        margin: 0;
+        padding: 5px 0;
+      }
+      #contextMenu li {
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+      #contextMenu li:hover {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="targetDiv">Right-click on me!</div>
+    <div id="contextMenu">
+      <ul>
+        <li onclick="alert('Option 1 clicked')">Option 1</li>
+        <li onclick="alert('Option 2 clicked')">Option 2</li>
+        <li onclick="alert('Option 3 clicked')">Option 3</li>
+      </ul>
+    </div>
+
+    <script>
+      const targetDiv = document.getElementById("targetDiv");
+      const contextMenu = document.getElementById("contextMenu");
+
+      targetDiv.addEventListener("contextmenu", function (event) {
+        event.preventDefault();
+        const { clientX: mouseX, clientY: mouseY } = event;
+
+        contextMenu.style.top = `${mouseY}px`;
+        contextMenu.style.left = `${mouseX}px`;
+        contextMenu.style.display = "block";
+      });
+
+      document.addEventListener("click", function () {
+        contextMenu.style.display = "none";
+      });
+    </script>
+  </body>
+</html>

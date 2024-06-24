@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Store a string in session storage
+sessionStorage.setItem('stringData', 'Hello, World!');
+
+// Retrieve a string from session storage
+const storedString = sessionStorage.getItem('stringData');
+console.log(storedString); // Outputs: Hello, World!
+
+// Store a number in session storage
+sessionStorage.setItem('numberData', 123);
+
+// Retrieve a number from session storage
+const storedNumber = parseInt(sessionStorage.getItem('numberData'));
+console.log(storedNumber); // Outputs: 123
+
+// Store a boolean in session storage
+sessionStorage.setItem('booleanData', true);
+
+// Retrieve a boolean from session storage
+const storedBoolean = sessionStorage.getItem('booleanData') === 'true';
+console.log(storedBoolean); // Outputs: true
+
+// Save an item in session storage
+sessionStorage.setItem('itemToRemove', 'Some data');
+
+// Remove the item from session storage
+sessionStorage.removeItem('itemToRemove');
+
+// Check if an item exists in session storage
+if (sessionStorage.getItem('itemToCheck') !== null) {
+  console.log('Item exists in session storage');
+} else {
+  console.log('Item does not exist in session storage');
+}
+
+// Store an array in session storage
+const arrayData = [1, 2, 3];
+sessionStorage.setItem('arrayData', JSON.stringify(arrayData));
+
+// Retrieve an array from session storage
+const storedArray = JSON.parse(sessionStorage.getItem('arrayData'));
+console.log(storedArray); // Outputs: [1, 2, 3]
+
+// Store an object in session storage
+const objectData = { name: 'John', age: 30 };
+sessionStorage.setItem('objectData', JSON.stringify(objectData));
+
+// Retrieve an object from session storage
+const storedObject = JSON.parse(sessionStorage.getItem('objectData'));
+console.log(storedObject); // Outputs: { name: 'John', age: 30 }
+
+// Save multiple items in session storage
+sessionStorage.setItem('itemA', 'Data A');
+sessionStorage.setItem('itemB', 'Data B');
+sessionStorage.setItem('itemC', 'Data C');
+
+// Retrieve each item from session storage
+const itemA = sessionStorage.getItem('itemA');
+const itemB = sessionStorage.getItem('itemB');
+const itemC = sessionStorage.getItem('itemC');
+console.log(itemA, itemB, itemC); // Outputs: Data A Data B Data C
+
+
+
+
+
+    </script>
+</body>
+</html>

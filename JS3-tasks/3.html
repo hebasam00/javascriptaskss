@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //////////////////task1////////////////////////
+        function sayHello(name) {
+            console.log(`Hello, ${name}!`);
+        }
+
+
+        sayHello('Alice');
+        sayHello('Bob');
+
+
+
+        //////////////////task2////////////////////////
+
+        // Define the anonymous function and assign it to the variable square
+        let square = function (num) {
+            return num * num;
+        };
+
+        // Example usage:
+        console.log(square(2)); // Output: 4
+        console.log(square(5)); // Output: 25
+
+
+        //////////////////task3////////////////////////
+
+        // Arrow function named multiply that takes two numbers and returns their product
+        const multiply = (num1, num2) => {
+            return num1 * num2;
+        };
+
+        // Example usage:
+        console.log(multiply(2, 3));  // Output: 6
+        console.log(multiply(4, 5));  // Output: 20
+
+
+        //////////////////task4////////////////////////
+
+        // Define the car object with properties and method
+        let car = {
+            make: 'Toyota',
+            model: 'Camry',
+            year: 2020,
+            getCarInfo: function () {
+                return `${this.make} ${this.model} (${this.year})`;
+            }
+        };
+
+        // Example usage:
+        console.log(car.make);            // Output: Toyota
+        console.log(car.getCarInfo());    // Output: Toyota Camry (2020)
+
+
+
+        //////////////////task5////////////////////////
+
+        // Define the array of colors
+        let colors = ['Red', 'Green', 'Blue'];
+
+        // Function to print each element of the array on a new line
+        function printColors(arr) {
+            arr.forEach(color => {
+                console.log(color);
+            });
+        }
+
+        // Example usage:
+        printColors(colors);
+
+
+        //////////////////task6////////////////////////
+        // Function to get the length of a string
+        function getStringLength(str) {
+            return str.length;
+        }
+
+        // Example usage:
+        console.log(getStringLength('Hello'));         // Output: 5
+        console.log(getStringLength('JavaScript'));    // Output: 10
+
+
+
+        //////////////////task7////////////////////////
+
+        // Function to convert a string to uppercase
+        function toUpperCase(str) {
+            return str.toUpperCase();
+        }
+
+        // Example usage:
+        console.log(toUpperCase('hello'));  // Output: HELLO
+        console.log(toUpperCase('world'));  // Output: WORLD
+
+
+        //////////////////task8////////////////////////
+
+        // Function to split a string by a delimiter and return an array of substrings
+        function splitString(str, delimiter) {
+            return str.split(delimiter);
+        }
+
+        // Example usage:
+        console.log(splitString('Hello,World', ','));        // Output: ['Hello', 'World']
+        console.log(splitString('JavaScript is fun', ' '));  // Output: ['JavaScript', 'is', 'fun']
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Enter Event</title>
+    <style>
+      /* Optional: Add some basic styling */
+      .content-div {
+        width: 300px;
+        height: 150px;
+        background-color: lightyellow;
+        margin: 20px;
+        padding: 20px;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contentDiv" class="content-div">Hover over me</div>
+
+    <script>
+      const contentDiv = document.getElementById("contentDiv");
+
+      contentDiv.addEventListener("mouseenter", function () {
+        contentDiv.textContent = "Mouse entered!";
+      });
+
+      contentDiv.addEventListener("mouseleave", function () {
+        contentDiv.textContent = "Hover over me";
+      });
+    </script>
+  </body>
+</html>

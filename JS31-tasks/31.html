@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      ///////////////task1/////////////////
+      // Function to calculate the area of a circle given its radius
+      function calculateArea(radius) {
+          const pi = Math.PI;
+          return pi * radius * radius;
+      }
+
+      // Example usage:
+      console.log(calculateArea(5));   // Output: 78.53981633974483
+      console.log(calculateArea(10));  // Output: 314.1592653589793
+
+
+      ///////////////task2/////////////////
+
+      // Function expression to reverse a string
+      const reverseString = function(str) {
+          return str.split('').reverse().join('');
+      };
+
+      // Example usage:
+      console.log(reverseString('hello'));  // Output: 'olleh'
+      console.log(reverseString('world'));  // Output: 'dlrow'
+
+      ///////////////task3/////////////////
+      // Arrow function to filter even numbers from an array
+      const filterEvenNumbers = arr => {
+          return arr.filter(num => num % 2 === 0);
+      };
+
+      // Example usage:
+      console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));  // Output: [2, 4, 6]
+      console.log(filterEvenNumbers([11, 22, 33, 44, 55])); // Output: [22, 44]
+
+
+      ///////////////task4/////////////////
+      // Object named library with properties books and addBook method
+      const library = {
+          books: [],
+          addBook: function(book) {
+              this.books.push(book);
+          }
+      };
+
+      // Example usage:
+      library.addBook({ title: '1984', author: 'George Orwell' });
+      library.addBook({ title: 'To Kill a Mockingbird', author: 'Harper Lee' });
+
+      console.log(library.books);
+
+
+      ///////////////task5/////////////////
+      // Array named numbers with at least 10 numbers
+      const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+      // Function to compute the sum of all numbers in an array
+      function sumArray(arr) {
+          let sum = 0;
+          for (let num of arr) {
+              sum += num;
+          }
+          return sum;
+      }
+
+      // Example usage:
+      console.log(sumArray(numbers)); // Output: 55
+
+
+      ///////////////task6/////////////////
+      // Function to count the number of vowels in a string
+      function countVowels(str) {
+          // Define an array of vowels
+          const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+          // Initialize a variable to store the count of vowels
+          let count = 0;
+
+          // Convert the input string to lowercase to handle case insensitivity
+          str = str.toLowerCase();
+
+          // Loop through each character in the string
+          for (let char
+
+
+      ///////////////task7/////////////////
+      // Function to capitalize the first letter of each word in a string
+      function capitalizeWords(str) {
+          // Split the string into an array of words
+          let words = str.split(' ');
+
+          // Capitalize the first letter of each word
+          for (let i = 0; i < words.length; i++) {
+              words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+          }
+
+          // Join the words back into a single string and return
+          return words.join(' ');
+      }
+
+      // Example usage:
+      console.log(capitalizeWords('hello world'));       // Output: 'Hello World'
+      console.log(capitalizeWords('javascript is fun')); // Output: 'JavaScript Is Fun'
+
+
+      ///////////////task8/////////////////
+
+      // Function to reverse the words in a sentence
+      function reverseWords(sentence) {
+          // Split the sentence into an array of words
+          let words = sentence.split(' ');
+
+          // Reverse the array of words
+          let reversedWords = words.reverse();
+
+          // Return the reversed array of words
+          return reversedWords;
+      }
+
+      // Example usage:
+      console.log(reverseWords('Hello World'));          // Output: ['World', 'Hello']
+      console.log(reverseWords('JavaScript is fun'));   // Output: ['fun', 'is', 'JavaScript']
+    </script>
+  </body>
+</html>

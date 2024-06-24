@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Example</title>
+</head>
+<body>
+    <div class="item">Initial Text</div>
+    <p class="item">Initial Text</p>
+    <span class="item">Initial Text</span>
+
+    <script>
+        // Select elements by their class name and change their text content
+        const items = document.getElementsByClassName('item');
+        for (let i = 0; i < items.length; i++) {
+            items[i].textContent = "Class Item";
+        }
+    </script>
+</body>
+</html>

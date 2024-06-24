@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        ///////////////task///////////////////
+
+        // Using a for loop to print numbers from 1 to 10 in JavaScript
+        for (let i = 1; i <= 10; i++) {
+            process.stdout.write(i.toString());
+            if (i < 10) {
+                process.stdout.write(' ');
+            }
+        }
+        /////////////////task2/////////////////////
+
+        // Using a while loop to print numbers from 1 to 10 in JavaScript
+        let i = 1;  // Initialize the counter variable
+        while (i <= 10) {  // Condition for the loop to continue
+            process.stdout.write(i.toString());  // Output the current value of i as a string
+            if (i < 10) {
+                process.stdout.write(' ');  // Output a space after each number except the last one
+            }
+            i++;  // Increment the counter variable
+        }
+        ///////////////////task3///////////////////////
+        // Using a for loop to print even numbers from 0 to 10 in JavaScript
+        for (let i = 0; i <= 10; i += 2) {
+            process.stdout.write(i.toString());
+            if (i < 10) {
+                process.stdout.write(' ');
+            }
+        }
+        //////////////task4/////////////////////////
+
+
+        // Using a for loop to calculate the sum of numbers from 1 to 10 in JavaScript
+        let sum = 0;
+
+        for (let i = 1; i <= 10; i++) {
+            sum += i;
+        }
+
+        console.log(sum); // Output the sum
+        //////////////task5////////////////////
+        // Using a for loop to print odd numbers from 0 to 10 in JavaScript
+        for (let i = 1; i <= 10; i += 2) {
+            process.stdout.write(i.toString());
+            if (i < 9) {
+                process.stdout.write(' ');
+            }
+        }
+        /////////////////////////task 6////////////////
+        // Example usage to check if age is greater than 16
+        let age = 27;  // Replace with any value you want to test
+
+        if (age > 16) {
+            console.log("You are an adult");
+        }
+        //////////////task 7//////////////////
+        // Example usage to check if score is less than or equal to 50
+        let score = 45;  // Replace with any value you want to test
+
+        if (score <= 50) {
+            console.log("You failed the test");
+        }
+        //////////////task 8//////////////////
+        // Example usage to check if name is equal to "John"
+        let name = "John";  // Replace with any value you want to test
+
+        if (name === "John") {
+            console.log("Hello, John");
+        }
+
+
+        //////////////task 9//////////////////
+
+        // Example usage to check if day is not equal to "Saturday" and "Friday"
+        let day = "Monday";  // Replace with any value you want to test
+
+        if (day !== "Saturday" && day !== "Friday") {
+            console.log("It's a weekday");
+        }
+
+        //////////////task 10//////////////////
+        // Example usage to check if num is divisible by 2
+        let num = 4;  // Replace with any value you want to test
+
+        if (num % 2 === 0) {
+            console.log("The number is even");
+        }
+
+
+        //////////////task 11//////////////////
+
+        // Example usage to check if x is a positive number
+        let x = 5;  // Replace with any value you want to test
+
+        if (x > 0) {
+            console.log("x is a positive number");
+        }
+
+        //////////////task 12//////////////////
+        // Example usage to check if y is a negative number
+        let y = -5;  // Replace with any value you want to test
+
+        if (y < 0) {
+            console.log("y is a negative number");
+        }
+
+
+        //////////////task 13//////////////////
+        // Example usage to check if y is a negative number
+        let yy = -5;  // Replace with any value you want to test
+
+        if (y < 0) {
+            console.log("y is a negative number");
+        }
+
+
+        //////////////task 14//////////////////
+
+        // Example usage to check if gpa is greater than or equal to 3.0
+        let gpa = 3.5;  // Replace with any value you want to test
+
+        if (gpa >= 3.0) {
+            console.log("Congratulations, you have a good GPA!");
+        }
+        ///////////////task 15////////////////////////
+        function isPrime(num) {
+            // Check if num is less than or equal to 1
+            if (num <= 1) {
+                return false;
+            }
+
+            // Check for prime numbers
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i === 0) {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
+        // Example usage:
+        console.log(isPrime(10)); // Output: false
+        console.log(isPrime(7));  // Output: true
+
+
+
+    </script>
+</body>
+
+</html>

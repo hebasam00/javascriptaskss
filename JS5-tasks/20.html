@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prevent Default Link Behavior</title>
+  </head>
+  <body>
+    <a href="https://www.example.com" id="myLink">Click me</a>
+    <p id="message" style="color: red; font-weight: bold"></p>
+
+    <script>
+      document
+        .getElementById("myLink")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          document.getElementById("message").textContent =
+            "Link click prevented. Default action is disabled.";
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Example</title>
+</head>
+<body>
+    <p>Initial Text</p>
+    <p>Initial Text</p>
+    <p>Initial Text</p>
+
+    <script>
+        // Select elements by their tag name and change their text content
+        const paragraphs = document.getElementsByTagName('p');
+        for (let i = 0; i < paragraphs.length; i++) {
+            paragraphs[i].textContent = "Paragraph Element";
+        }
+    </script>
+</body>
+</html>

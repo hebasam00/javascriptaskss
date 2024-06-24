@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Example</title>
+</head>
+<body>
+    <div data-role="admin">Initial Text</div>
+
+    <script>
+        // Select the element by its attribute and change its text content
+        const adminElement = document.querySelector('[data-role="admin"]');
+        adminElement.textContent = "Admin Role";
+    </script>
+</body>
+</html>

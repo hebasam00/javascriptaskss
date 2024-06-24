@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+class Car {
+    constructor(make, model) {
+        this.make = make; 
+        this.model = model;
+    }
+
+    displayInfo() {
+        console.log(`Car Make: ${this.make}, Model: ${this.model}`);
+    }
+
+    start() {
+        console.log(`The car ${this.make} ${this.model} has started.`);
+    }
+}
+
+class ElectricCar extends Car {
+    constructor(make, model, battery_size) {
+        super(make, model);
+        this.battery_size = battery_size; 
+    }
+
+    displayElectricCarInfo() {
+        console.log(`Car Make: ${this.make}, Model: ${this.model}, Battery Size: ${this.battery_size} kWh`);
+    }
+}
+
+let myElectricCar = new ElectricCar('Tesla', 'Model S', 100);
+
+myElectricCar.displayInfo();
+
+myElectricCar.displayElectricCarInfo();
+myElectricCar.start();
+
+    </script>
+</body>
+</html>

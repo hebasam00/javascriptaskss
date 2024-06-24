@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Content Load</title>
+    <style>
+      #content {
+        border: 1px solid #000;
+        padding: 20px;
+        margin-top: 20px;
+        min-height: 100px;
+      }
+      .button {
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+        background-color: #f0f0f0;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button" id="loadContent1">Load Content 1</div>
+    <div class="button" id="loadContent2">Load Content 2</div>
+    <div class="button" id="loadContent3">Load Content 3</div>
+
+    <div id="content">Default content will be replaced here.</div>
+
+    <script>
+      document
+        .getElementById("loadContent1")
+        .addEventListener("click", function () {
+          document.getElementById("content").innerHTML =
+            "<h2>Content 1</h2><p>This is the first piece of dynamic content.</p>";
+        });
+
+      document
+        .getElementById("loadContent2")
+        .addEventListener("click", function () {
+          document.getElementById("content").innerHTML =
+            "<h2>Content 2</h2><p>This is the second piece of dynamic content.</p>";
+        });
+
+      document
+        .getElementById("loadContent3")
+        .addEventListener("click", function () {
+          document.getElementById("content").innerHTML =
+            "<h2>Content 3</h2><p>This is the third piece of dynamic content.</p>";
+        });
+    </script>
+  </body>
+</html>

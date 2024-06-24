@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll to Top Button</title>
+    <style>
+      body {
+        height: 2000px;
+        font-family: Arial, sans-serif;
+      }
+      #scrollToTopBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none;
+      }
+      #scrollToTopBtn.show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Scroll down to see the button</h1>
+    <button id="scrollToTopBtn">Scroll to Top</button>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 100) {
+            scrollToTopBtn.classList.add("show");
+          } else {
+            scrollToTopBtn.classList.remove("show");
+          }
+        });
+
+        scrollToTopBtn.addEventListener("click", function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hover Tooltip Example</title>
+    <style>
+    
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black; 
+        cursor: help;
+      }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tooltip" id="tooltipDiv">
+      Hover over me
+      <span class="tooltiptext">Tooltip text</span>
+    </div>
+
+    <script>
+      const tooltipDiv = document.getElementById("tooltipDiv");
+      const tooltipText = tooltipDiv.querySelector(".tooltiptext");
+
+      tooltipDiv.addEventListener("mouseenter", function () {
+        tooltipText.style.visibility = "visible";
+        tooltipText.style.opacity = "1";
+      });
+
+      tooltipDiv.addEventListener("mouseleave", function () {
+        tooltipText.style.visibility = "hidden";
+        tooltipText.style.opacity = "0";
+      });
+    </script>
+  </body>
+</html>

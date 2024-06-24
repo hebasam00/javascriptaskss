@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        ////////////////////////////////////////task1//////////////////////////////////
+        let cash = 1000;
+        let currentLiabilities = 500;
+
+
+        let cashFlowRatio = cash / currentLiabilities;
+
+
+        console.log(cashFlowRatio);
+
+        let revenues = 1000;
+        let expenses = 500;
+
+        let net = revenues - expenses;
+
+        console.log(netIncome);
+
+        let liabilities = 1000;
+        let equity = 500;
+
+        let totalAssets = liabilities + equity;
+
+        console.log(totalAssets);
+
+
+        let profitMargin = 1000;
+        let sales = 500;
+
+        let netIncome = profitMargin * sales;
+
+        console.log(netIncome);
+
+        let numbers = [7, 9, 2];
+
+        let sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+        let average = sum / numbers.length;
+
+        console.log(average);
+        let price = 150;
+        let discountPercentage = 30;
+
+        let discountAmount = (price * discountPercentage) / 100;
+
+        let discountedPrice = price - discountAmount;
+
+        console.log(discountedPrice);
+
+        let agee = 20;
+
+        let isWithinAgeLimitt = (age > 18) && (age < 30);
+
+        console.log(isWithinAgeLimit);
+
+        let age = 20;
+
+        let isWithinAgeLimit = (age > 18) && (age < 30);
+
+        console.log(isWithinAgeLimit);
+
+        let base = 2;
+        let exponent = 3;
+
+        let result = Math.pow(base, exponent);
+
+
+        console.log(result);
+
+
+        let pricee = 150;
+        let discountPercentagee = 30;
+
+
+        let discountAmountt = (price * discountPercentage) / 100;
+
+
+        let discountedPricee = price - discountAmount;
+
+        console.log(discountedPrice);
+
+        let number1 = 2;
+        let number2 = 3;
+
+        let resultt = number1 ** number2;
+
+        console.log(result);
+        let numberr1 = 2;
+        let numberr2 = 3;
+        let resulte = Math.pow(number1, number2);
+
+
+        console.log(result);
+
+        let numbere1 = 10;
+        let numbere2 = 4;
+
+        let remainder = number1 % number2;
+
+        console.log(remainder);
+        ////////////////////////////////task 2////////////////////////////////////////
+        console.log(typeof (100)); // Output: "number"
+        console.log(typeof (73.9)); // Output: "number"
+        console.log(typeof (NaN)); // Output: "number"
+        console.log(typeof ("Water")); // Output: "string"
+        console.log(typeof (false)); // Output: "boolean"
+        console.log(typeof (9 != 11)); // Output: "boolean"
+        console.log("Orang" + "e"); // Output: "Orange"
+        console.log("Orange" - "s"); // Output: NaN
+        console.log("4" + "8"); // Output: "48"
+        console.log("4" - "8"); // Output: -4
+        console.log("name" + 3); // Output: "name3"
+        console.log("name" - 3); // Output: NaN
+        console.log(82 * "word"); // Output: NaN
+        console.log(1 + "hello"); // Output: "1hello"
+        console.log(1 + true); // Output: 2
+        console.log("hello" + true); // Output: "hellotrue"
+        console.log(1 == '1'); // Output: true
+        console.log(1 === '1'); // Output: false
+        ///////////////////////////////////task3/////////////////////////////////
+
+        let originalString = "Welcome to Orange";
+
+        // Output: WELCOME TO ORANGE
+        let uppercaseString = originalString.toUpperCase();
+        console.log(uppercaseString);
+
+        // Output: TO
+        let substring = originalString.substring(8, 10);
+        console.log(substring);
+
+        // Output: Hello from Orange
+        let replacedString = originalString.replace("Welcome", "Hello");
+        console.log(replacedString);
+
+        // Output: welcome to orange
+        let lowercaseString = originalString.toLowerCase();
+        console.log(lowercaseString);
+
+        // Output: 17
+        let lengthOfString = originalString.length;
+        console.log(lengthOfString);
+
+        // Output: Welcome to "Orange"
+        let quotedString = originalString.replace("Orange", '"Orange"');
+        console.log(quotedString);
+
+        // Output: Welcome to Orange Jordan
+        let replacedLocation = originalString.replace("Orange", "Orange Jordan");
+        console.log(replacedLocation);
+        //task4
+
+        alert("Welcome to our website!");
+
+        //////////////////////////////task5//////////////////////////////////
+
+        // Declare and initialize variables of different data types
+        let stringVar = "Hello";
+        let numberVar = 42;
+        let booleanVar = true;
+        let arrayVar = [1, 2, 3, 4, 5];
+        let objectVar = { name: "John", age: 30 };
+        let nullVar = null;
+        let undefinedVar;
+
+        // Strings
+        let stringVar2 = "This is a string";
+        let stringVar3 = "Another string";
+
+        // Numbers
+        let numberVar2 = 123;
+        let numberVar3 = 3.14;
+
+        // Booleans
+        let booleanVar2 = false;
+        let booleanVar3 = true;
+
+        // Arrays
+        let arrayVar2 = ["apple", "banana", "orange"];
+        let arrayVar3 = [10, 20, 30];
+
+        // Objects
+        let objectVar2 = { city: "New York", population: 8000000 };
+        let objectVar3 = { name: "Alice", age: 25 };
+
+        // Display values in the console
+        console.log("String variables:");
+        console.log(stringVar, stringVar2, stringVar3);
+        console.log("\nNumber variables:");
+        console.log(numberVar, numberVar2, numberVar3);
+        console.log("\nBoolean variables:");
+        console.log(booleanVar, booleanVar2, booleanVar3);
+        console.log("\nArray variables:");
+        console.log(arrayVar, arrayVar2, arrayVar3);
+        console.log("\nObject variables:");
+        console.log(objectVar, objectVar2, objectVar3);
+        console.log("\nOther variables:");
+        console.log(nullVar, undefinedVar);
+        //////////////////////task6/////////////////////////////////
+
+        // Using var
+        function usingVar() {
+            if (true) {
+                var message = "Hello from var!";
+            }
+            console.log(message); // Outputs: Hello from var!
+        }
+
+        usingVar();
+        console.log(message); // Outputs: Hello from var!
+
+        // Using let
+        function usingLet() {
+            if (true) {
+                let greeting = "Hello from let!";
+                console.log(greeting); // Outputs: Hello from let!
+            }
+            // console.log(greeting); // Error: greeting is not defined
+        }
+
+        usingLet();
+        // console.log(greeting); // Error: greeting is not defined
+
+        ////////////////////////task 7///////////////////////////
+
+        // Arithmetic Operations
+        let a = 10;
+        let b = 5;
+
+        console.log("Arithmetic Operations:");
+        console.log(`Addition: ${a} + ${b} = ${a + b}`);
+        console.log(`Subtraction: ${a} - ${b} = ${a - b}`);
+        console.log(`Multiplication: ${a} * ${b} = ${a * b}`);
+        console.log(`Division: ${a} / ${b} = ${a / b}`);
+        console.log(`Modulus (remainder): ${a} % ${b} = ${a % b}`);
+        console.log();
+
+        // Comparison Operations
+        console.log("Comparison Operations:");
+        console.log(`${a} > ${b}:`, a > b);
+        console.log(`${a} < ${b}:`, a < b);
+        console.log(`${a} == ${b}:`, a == b);
+        console.log(`${a} != ${b}:`, a != b);
+        console.log(`${a} >= ${b}:`, a >= b);
+        console.log(`${a} <= ${b}:`, a <= b);
+        console.log();
+
+        // Logical Operations
+        let x = true;
+        let y = false;
+
+        console.log("Logical Operations:");
+        console.log(`AND (x && y):`, x && y);
+        console.log(`OR (x || y):`, x || y);
+        console.log(`NOT (!x):`, !x);
+        console.log(`NOT (!y):`, !y);
+        console.log();
+
+        // Assignment Operations
+        console.log("Assignment Operations:");
+        let assignmentVar = a;
+        assignmentVar += 5;
+        console.log(`Add and assign (${a} += 5):`, assignmentVar);
+        assignmentVar -= 5;
+        console.log(`Subtract and assign (${a} -= 5):`, assignmentVar);
+        assignmentVar *= 2;
+        console.log(`Multiply and assign (${a} *= 2):`, assignmentVar);
+        /////////////////////task8////////////////////////////////////
+
+        // Using innerHTML
+        document.getElementById('message1').innerHTML = "Message using innerHTML.";
+
+        // Using document.write()
+        document.write("Message using document.write().");
+
+        // Using window.alert()
+        window.alert("Message using window.alert().");
+
+        // Using console.log()
+        console.log("Message logged to console.");
+
+    </script>
+</body>
+
+</html>

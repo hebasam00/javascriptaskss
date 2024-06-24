@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Image Source on Click</title>
+  </head>
+  <body>
+    <img id="myImage" src="image1.jpg" alt="First Image" width="300" />
+    <br /><br />
+    <button id="changeImageButton">Change Image</button>
+
+    <script>
+      document
+        .getElementById("changeImageButton")
+        .addEventListener("click", function () {
+          const imgElement = document.getElementById("myImage");
+          const currentSrc = imgElement.getAttribute("src");
+
+          if (currentSrc === "image1.jpg") {
+            imgElement.setAttribute("src", "image2.jpg");
+          } else {
+            imgElement.setAttribute("src", "image1.jpg");
+          }
+        });
+    </script>
+  </body>
+</html>

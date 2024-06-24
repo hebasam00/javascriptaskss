@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Leave Event</title>
+    <style>
+      /* Optional: Add some basic styling */
+      .content-div {
+        width: 300px;
+        height: 150px;
+        background-color: lightyellow;
+        margin: 20px;
+        padding: 20px;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="contentDiv" class="content-div">Hover over me</div>
+
+    <script>
+      // Select the div element
+      const contentDiv = document.getElementById("contentDiv");
+
+      // Add mouseleave event listener to the div
+      contentDiv.addEventListener("mouseleave", function () {
+        // Change the text of the div back to original
+        contentDiv.textContent = "Hover over me";
+      });
+    </script>
+  </body>
+</html>

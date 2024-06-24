@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1//
+      localStorage.setItem("stringData", "Hello, World!");
+
+      const storedString = localStorage.getItem("stringData");
+      console.log(storedString);
+
+      //2//
+      localStorage.setItem("numberData", 123);
+
+      const storedNumber = parseInt(localStorage.getItem("numberData"));
+      console.log(storedNumber);
+
+      //3//
+      localStorage.setItem("booleanData", true);
+
+      const storedBoolean = localStorage.getItem("booleanData") === "true";
+      console.log(storedBoolean);
+
+      //4//
+      localStorage.setItem("itemToRemove", "Some data");
+
+      localStorage.removeItem("itemToRemove");
+
+      //5//
+      localStorage.setItem("item1", "Data 1");
+      localStorage.setItem("item2", "Data 2");
+      localStorage.setItem("item3", "Data 3");
+
+      localStorage.clear();
+
+      //6//
+      if (localStorage.getItem("itemToCheck") !== null) {
+        console.log("Item exists in local storage");
+      } else {
+        console.log("Item does not exist in local storage");
+      }
+
+      //7//
+      const arrayData = [1, 2, 3];
+      localStorage.setItem("arrayData", JSON.stringify(arrayData));
+
+      const storedArray = JSON.parse(localStorage.getItem("arrayData"));
+      console.log(storedArray);
+      // 8//
+      const objectData = { name: "John", age: 30 };
+      localStorage.setItem("objectData", JSON.stringify(objectData));
+
+      const storedObject = JSON.parse(localStorage.getItem("objectData"));
+      console.log(storedObject);
+
+      //9//
+      localStorage.setItem("itemA", "Data A");
+      localStorage.setItem("itemB", "Data B");
+      localStorage.setItem("itemC", "Data C");
+
+      // 10//
+      const itemA = localStorage.getItem("itemA");
+      const itemB = localStorage.getItem("itemB");
+      const itemC = localStorage.getItem("itemC");
+      console.log(itemA, itemB, itemC);
+
+      localStorage.setItem("itemToUpdate", "Initial data");
+
+      localStorage.setItem("itemToUpdate", "Updated data");
+
+      const updatedItem = localStorage.getItem("itemToUpdate");
+      console.log(updatedItem);
+    </script>
+  </body>
+</html>
