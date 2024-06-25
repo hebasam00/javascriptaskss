@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+const processArray = (callback, array) => {
+  for (let i = 0; i < array.length; i++) {
+    callback(array[i]);
+  }
+};
+
+const array = [1, 2, 3, 4, 5];
+
+const logElement = (element) => {
+  console.log(`Element: ${element}`);
+};
+
+processArray(logElement, array);
+
+    </script>
+</body>
+</html>

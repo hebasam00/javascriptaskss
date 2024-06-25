@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const multiplier = (factor) => {
+  return (input) => {
+    return input * factor;
+  };
+};
+
+const multiplyBy2 = multiplier(2);
+const multiplyBy5 = multiplier(5); 
+
+console.log(multiplyBy2(3)); 
+console.log(multiplyBy5(4)); 
+
+    </script>
+</body>
+</html>

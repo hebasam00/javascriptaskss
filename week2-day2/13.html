@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const arrayOfObjects = [
+  { id: 1, name: 'John', age: 30 },
+  { id: 2, name: 'Jane', age: 25 },
+  { id: 3, name: 'Doe', age: 35 }
+];
+
+arrayOfObjects.forEach((obj) => {
+  console.log(`Object with id ${obj.id}:`);
+  console.log(`Name: ${obj.name}`);
+  console.log(`Age: ${obj.age}`);
+  console.log('-------------------------');
+});
+
+    </script>
+</body>
+</html>

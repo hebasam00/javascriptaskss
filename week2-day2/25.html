@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const arrayOfStrings = ['apple', 'banana', 'cherry', 'date', 'grape'];
+
+let countWithA = 0;
+
+arrayOfStrings.forEach(str => {
+  if (str.includes('a')) {
+    countWithA++;
+  }
+});
+
+console.log(`Number of strings containing 'a': ${countWithA}`); // Output: Number of strings containing 'a': 4
+
+    </script>
+</body>
+</html>

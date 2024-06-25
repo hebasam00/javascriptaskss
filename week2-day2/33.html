@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const mixedValues = [0, 1, '', 'hello', false, true, null, undefined, NaN, 'world'];
+
+const truthyValuesArray = mixedValues.filter(value => {
+  return value;
+});
+
+console.log(truthyValuesArray);
+
+    </script>
+</body>
+</html>

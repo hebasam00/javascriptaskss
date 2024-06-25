@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+const arrayOfStrings = ['apple', 'banana', 'cherry', 'date'];
+
+const arrayOfObjects = [];
+
+arrayOfStrings.forEach(str => {
+  arrayOfObjects.push({ originalString: str, length: str.length });
+});
+
+console.log(arrayOfObjects);
+
+    </script>
+</body>
+</html>
